@@ -1,0 +1,75 @@
+---
+title: "Exploring Swiss Fertility Dynamics"
+author: RanjithGoud Palusa
+date: 2023-12-15
+image: "Linear Regression.png"
+theme: litera 
+---
+
+## A Statistical Analysis in R using Linear Regression
+
+For this analysis, we will use the Swiss dataset available in R.It contains data on fertility and various socioeconomic indicators for each of 47 French-speaking provinces in Switzerland in 1888. We can use linear regression to explore the relationships between fertility and other variables like agriculture, examination, education, Catholic, and infant mortality.
+
+The `swiss` dataset in R is an excellent choice for linear regression analysis. It contains data on fertility and various socioeconomic indicators for each of 47 French-speaking provinces in Switzerland in 1888. We can use linear regression to explore the relationships between fertility and other variables like agriculture, examination, education, Catholic, and infant mortality.
+
+Step 1: Load the datset
+
+```{r}
+
+data(swiss)
+
+```
+
+Step 2: Multiple linear regression models
+
+```{r}
+
+model_agriculture <- lm(Fertility ~ Agriculture, data=swiss)
+model_examination <- lm(Fertility ~ Examination, data=swiss)
+model_education <- lm(Fertility ~ Education, data=swiss)
+model_catholic <- lm(Fertility ~ Catholic, data=swiss)
+model_infantMortality <- lm(Fertility ~ Infant.Mortality, data=swiss)
+
+```
+
+Step 3: Plotting the results
+```{r}
+par(mfrow=c(2,3)) 
+```
+
+Step 4: Agriculture plot
+```{r}
+plot(swiss$Agriculture, swiss$Fertility, main="Fertility vs Agriculture",
+     xlab="Agriculture", ylab="Fertility", pch=19)
+abline(model_agriculture, col="blue")
+```
+
+
+Step 5: Examination plot
+```{r}
+plot(swiss$Examination, swiss$Fertility, main="Fertility vs Examination",
+     xlab="Examination", ylab="Fertility", pch=19)
+abline(model_examination, col="red")
+```
+
+Step 6: Education plot
+```{r}
+plot(swiss$Education, swiss$Fertility, main="Fertility vs Education",
+     xlab="Education", ylab="Fertility", pch=19)
+abline(model_education, col="green")
+```
+
+Step 7: Catholic plot
+```{r}
+plot(swiss$Catholic, swiss$Fertility, main="Fertility vs Catholic",
+     xlab="Catholic", ylab="Fertility", pch=19)
+abline(model_catholic, col="orange")
+```
+
+Step 8: Infant Mortality plot
+```{r}
+plot(swiss$Infant.Mortality, swiss$Fertility, main="Fertility vs Infant Mortality",
+     xlab="Infant Mortality", ylab="Fertility", pch=19)
+abline(model_infantMortality, col="purple")
+```
+

@@ -1,0 +1,28 @@
+---
+title: "RanjithGoud Palusa"
+image: ranjith.jpg
+resources: Ranjith Resume.pdf
+about: 
+  template: marquee
+  image-shape: round
+  image-width: 14em
+  links:
+  - text: Email
+    icon: envelope
+    href: mailto:RanjithGoudPalusa@my.unt.edu
+  - text: GitHub
+    icon: github
+    href: https://github.com/Ranjith2405
+  - text: Resume
+    icon: file-text
+    href: Ranjith Resume.pdf
+  id: ppc
+---
+
+::: {#ppc}
+Ranjith Goud is currently pursuing his Masters of Science in Advanced Data Analytics at the University of North Texas.
+
+Experience in creating API Proxies with traffic management, Mediation policies, Security Policies, and Flow callout policies. Designed a centralized security architecture using JWT and OAuth 2.0 for secure APIs while implementing 2-factor authentication to protect clients and API owners from malware threats.
+
+Proficient in PowerBI, Tableau, Github Jenkins, APIGEE API Management, Python, Hadoop, MySQL, Oracle, HTML, Linux, Windows and Visual Studio.
+:::

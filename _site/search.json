@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "blogs/index.html",
+    "href": "blogs/index.html",
+    "title": "Exploring Swiss Fertility Dynamics",
+    "section": "",
+    "text": "For this analysis, we will use the Swiss dataset available in R.It contains data on fertility and various socioeconomic indicators for each of 47 French-speaking provinces in Switzerland in 1888. We can use linear regression to explore the relationships between fertility and other variables like agriculture, examination, education, Catholic, and infant mortality.\nThe swiss dataset in R is an excellent choice for linear regression analysis. It contains data on fertility and various socioeconomic indicators for each of 47 French-speaking provinces in Switzerland in 1888. We can use linear regression to explore the relationships between fertility and other variables like agriculture, examination, education, Catholic, and infant mortality.\nStep 1: Load the datset\n\ndata(swiss)\n\nStep 2: Multiple linear regression models\n\nmodel_agriculture &lt;- lm(Fertility ~ Agriculture, data=swiss)\nmodel_examination &lt;- lm(Fertility ~ Examination, data=swiss)\nmodel_education &lt;- lm(Fertility ~ Education, data=swiss)\nmodel_catholic &lt;- lm(Fertility ~ Catholic, data=swiss)\nmodel_infantMortality &lt;- lm(Fertility ~ Infant.Mortality, data=swiss)\n\nStep 3: Plotting the results\n\npar(mfrow=c(2,3)) \n\nStep 4: Agriculture plot\n\nplot(swiss$Agriculture, swiss$Fertility, main=\"Fertility vs Agriculture\",\n     xlab=\"Agriculture\", ylab=\"Fertility\", pch=19)\nabline(model_agriculture, col=\"blue\")\n\n\n\n\nStep 5: Examination plot\n\nplot(swiss$Examination, swiss$Fertility, main=\"Fertility vs Examination\",\n     xlab=\"Examination\", ylab=\"Fertility\", pch=19)\nabline(model_examination, col=\"red\")\n\n\n\n\nStep 6: Education plot\n\nplot(swiss$Education, swiss$Fertility, main=\"Fertility vs Education\",\n     xlab=\"Education\", ylab=\"Fertility\", pch=19)\nabline(model_education, col=\"green\")\n\n\n\n\nStep 7: Catholic plot\n\nplot(swiss$Catholic, swiss$Fertility, main=\"Fertility vs Catholic\",\n     xlab=\"Catholic\", ylab=\"Fertility\", pch=19)\nabline(model_catholic, col=\"orange\")\n\n\n\n\nStep 8: Infant Mortality plot\n\nplot(swiss$Infant.Mortality, swiss$Fertility, main=\"Fertility vs Infant Mortality\",\n     xlab=\"Infant Mortality\", ylab=\"Fertility\", pch=19)\nabline(model_infantMortality, col=\"purple\")"
+  },
+  {
+    "objectID": "blogs/index.html#a-statistical-analysis-in-r-using-linear-regression",
+    "href": "blogs/index.html#a-statistical-analysis-in-r-using-linear-regression",
+    "title": "Exploring Swiss Fertility Dynamics",
+    "section": "",
+    "text": "For this analysis, we will use the Swiss dataset available in R.It contains data on fertility and various socioeconomic indicators for each of 47 French-speaking provinces in Switzerland in 1888. We can use linear regression to explore the relationships between fertility and other variables like agriculture, examination, education, Catholic, and infant mortality.\nThe swiss dataset in R is an excellent choice for linear regression analysis. It contains data on fertility and various socioeconomic indicators for each of 47 French-speaking provinces in Switzerland in 1888. We can use linear regression to explore the relationships between fertility and other variables like agriculture, examination, education, Catholic, and infant mortality.\nStep 1: Load the datset\n\ndata(swiss)\n\nStep 2: Multiple linear regression models\n\nmodel_agriculture &lt;- lm(Fertility ~ Agriculture, data=swiss)\nmodel_examination &lt;- lm(Fertility ~ Examination, data=swiss)\nmodel_education &lt;- lm(Fertility ~ Education, data=swiss)\nmodel_catholic &lt;- lm(Fertility ~ Catholic, data=swiss)\nmodel_infantMortality &lt;- lm(Fertility ~ Infant.Mortality, data=swiss)\n\nStep 3: Plotting the results\n\npar(mfrow=c(2,3)) \n\nStep 4: Agriculture plot\n\nplot(swiss$Agriculture, swiss$Fertility, main=\"Fertility vs Agriculture\",\n     xlab=\"Agriculture\", ylab=\"Fertility\", pch=19)\nabline(model_agriculture, col=\"blue\")\n\n\n\n\nStep 5: Examination plot\n\nplot(swiss$Examination, swiss$Fertility, main=\"Fertility vs Examination\",\n     xlab=\"Examination\", ylab=\"Fertility\", pch=19)\nabline(model_examination, col=\"red\")\n\n\n\n\nStep 6: Education plot\n\nplot(swiss$Education, swiss$Fertility, main=\"Fertility vs Education\",\n     xlab=\"Education\", ylab=\"Fertility\", pch=19)\nabline(model_education, col=\"green\")\n\n\n\n\nStep 7: Catholic plot\n\nplot(swiss$Catholic, swiss$Fertility, main=\"Fertility vs Catholic\",\n     xlab=\"Catholic\", ylab=\"Fertility\", pch=19)\nabline(model_catholic, col=\"orange\")\n\n\n\n\nStep 8: Infant Mortality plot\n\nplot(swiss$Infant.Mortality, swiss$Fertility, main=\"Fertility vs Infant Mortality\",\n     xlab=\"Infant Mortality\", ylab=\"Fertility\", pch=19)\nabline(model_infantMortality, col=\"purple\")"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Exploring Swiss Fertility Dynamics\n\n\n\n\n\n\n\n\n\n\n\n\nDec 15, 2023\n\n\nRanjithGoud Palusa\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "RanjithGoud Palusa",
+    "section": "",
+    "text": "Ranjith Goud is currently pursuing his Masters of Science in Advanced Data Analytics at the University of North Texas.\nExperience in creating API Proxies with traffic management, Mediation policies, Security Policies, and Flow callout policies. Designed a centralized security architecture using JWT and OAuth 2.0 for secure APIs while implementing 2-factor authentication to protect clients and API owners from malware threats.\nProficient in PowerBI, Tableau, Github Jenkins, APIGEE API Management, Python, Hadoop, MySQL, Oracle, HTML, Linux, Windows and Visual Studio.\n \n    \n  \n    \n     Email\n  \n  \n    \n     GitHub\n  \n  \n    \n     Resume"
+  }
+]
